@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Biblioteca</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    
+    <script  src="script2.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+      <div id="content">
+      
+        </div>
+        <form  id="formLibro">
+        <h1 class="title">Biblioteca</h1>
+<input class="imput" type= "text" id="Titulo" placeholder="Titulo"  required/><br />
+<br>
+<input  class="imput" type="text" id="Autor" placeholder="Autor" required> <br>
+<br/>
+
+<input   class="imput" type="number" id="Año"  min="1800" max="2024" step="1" placeholder="Año" required> <br>
+<br/>
+
+<input  class="imput" type="text" id="Editorial" placeholder="Editorial" required> <br>
+<br/>
+<input  class="imput"  type="text" id="Categoria" placeholder="Categoria" required> <br>
+<br/>
+<input  class="imput"  type="url" id="url" placeholder="https://ejemplo.com"> <br>
+
+<div class="botones">
+  <button class="boton"  type="reset">Limpiar Formulario</button>
+  <button class="boton" type="button" id="BotonDeañadir" onclick ="añadirLibro(event)">Añadir libro</button>
+  <button class="boton" type="button" id ="botonDeActualizar" disabled>Actualizar Libro</button>
+</div>
+        </form> 
+      </div>
+      <div>
+       <table>
+        <thead class="Table-head">
+          <tr id="filaDeEncabezados">
+            <th class="Table-header">Titulo</th>
+            <th class="Table-header">Autor</th>
+            <th class="Table-header">Año</th>
+            <th class="Table-header">Editorial</th>
+            <th class="Table-header">Categoria</th>
+            <th class="Table-header">Portada</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+       </table>
+
+      </div>
+  </body>
+</html>
